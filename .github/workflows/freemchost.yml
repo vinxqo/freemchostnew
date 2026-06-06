@@ -2,8 +2,7 @@ name: Freemchost Auto Renew Permanent
 
 on:
   schedule:
-    # 每天在国际标准时间 04:00 和 16:00 各执行一次（规避由于面板时差导致的续期遗漏）
-    - cron: '0 4,16 * * *'
+    - cron: '0 2 * * *'
   workflow_dispatch: # 允许你在 GitHub 页面上手动点击按钮强制触发
 
 jobs:
